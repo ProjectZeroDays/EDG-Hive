@@ -560,4 +560,5 @@ Distributed under the [GNU AGPL v3.0](LICENSE). Commercial licensing inquiries: 
 ## Disclaimer
 
 Hive is provided for **authorized security testing only**. Running it against systems without explicit written authorization is illegal in most jurisdictions and may result in criminal penalties. The authors accept no liability for misuse. You are solely responsible for complying with all applicable laws and engagement rules of scope. If you are unsure whether a target is in scope, do not test it.
-](https://github.com/ProjectZeroDays/EDG-HIVE/blob/master/web/public/hive-README.png)
+
+[hive](https://github.com/ProjectZeroDays/EDG-HIVE/blob/master/web/public/hive-README.png)
