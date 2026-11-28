@@ -1,7 +1,7 @@
 <div align="center">
 
   <p align="center">
-  <img src="/web/public/logo.png" alt="Hive Logo" width="50" height="50">
+  <img src="/web/public/logo.png" alt="Hive Logo" width="100" height=100">
 </p>
   
 <p align="center">
