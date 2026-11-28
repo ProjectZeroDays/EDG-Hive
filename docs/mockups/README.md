@@ -1,4 +1,4 @@
-# ARTEX Enterprise GUI — Mockup Pack
+# HIVE Enterprise GUI — Mockup Pack
 
 Open `index.html` in any browser. Use the pills at the top to switch between the six
 screens; the **◐ Theme** toggle previews the light variant, **⇱ Density** toggles a
