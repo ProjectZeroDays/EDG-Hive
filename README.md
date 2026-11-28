@@ -5,7 +5,8 @@
 </p>
 
 ───────────▼───────────
-  
+
+
 <p align="center">
   <img src="/web/public/hive-README.png" alt="Hive Logo" width="600">
 </p>
