@@ -5,7 +5,7 @@
 </p>
   
 <p align="center">
-  <img src="/web/public/hive-README.png" alt="Hive Logo" width="200">
+  <img src="/web/public/hive-README.png" alt="Hive Logo" width="400">
 </p>
 
 **Autonomous penetration testing that keeps its receipts.**
