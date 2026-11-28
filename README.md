@@ -13,6 +13,7 @@
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-6b34db)](https://github.com/ProjectZeroDays/EDG-Hive/releases)
 [![Security](https://img.shields.io/badge/security-AGPL--3.0%20%2B%20scope%20gates-6b34db)](SECURITY.md)
 [![Maintained](https://img.shields.io/badge/maintained-yes-6b34db)](https://github.com/ProjectZeroDays/EDG-Hive/commits/main)
+
 <a href="#quick-start">Quick Start</a> ·
   <a href="#architecture">Architecture</a> ·
   <a href="#installation">Installation</a> ·
