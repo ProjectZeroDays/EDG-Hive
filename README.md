@@ -13,7 +13,7 @@
 
 ---
 
-**Autonomous penetration testing that keeps its receipts.**
+**Hive turns high-level security objectives into verifiable offensive testing with full receipts. Instead of running static checklists, Hive decomposes goals into intents, coordinates multi-worker tool execution, and records reasoning and target state across linked exploration and asset graphs. Built as a single Go binary with an embedded Next.js UI and PostgreSQL 16 backing, it pairs autonomous execution with scope enforcement, human intercept approvals, traffic-bound evidence, and multi-provider LLM failover.**
 
 ----
 
