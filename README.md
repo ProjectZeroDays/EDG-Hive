@@ -93,27 +93,27 @@ Hive is a self-hosted, LLM-driven penetration testing platform. It is not a chat
 ## Architecture
 
 ```text
-                        ┌───────────────────────────────────────────┐
-                        │                Operator                   │
-                        │   Web UI (Next.js, embedded in binary)    │
-                        └───────────────┬───────────────────────────┘
-                                        │ HTTPS / JWT
-                        ┌───────────────▼───────────────────────────┐
-                        │              Hive (Go binary)             │
-                        │                                           │
-                        │  ┌─────────┐   ┌────────┐  ┌───────────┐  │
-                        │  │ Planner │─▶│ Engine │─▶│  Workers  │  │
-                        │  └────┬────┘   └───┬────┘  └─────┬─────┘  │
-                        │       │            │             │        │
-                        │  Exploration   LLM pool      Tools/MCP    │
-                        │    graph      (failover)      agents      │
-                        └───────┬───────────────────────┬───────────┘
-                                │                       │
-                ┌───────────────▼───────┐   ┌───────────▼──────────┐
-                │     PostgreSQL 16     │   │ Targets (authorized) │
-                │  assets · findings ·  │   │ MITM proxy :8788     │
-                │  traffic · activity   │   │ browser extension    │
-                └───────────────────────┘   └──────────────────────┘
+             ┌───────────────────────────────────────────┐
+             │                Operator                   │
+             │   Web UI (Next.js, embedded in binary)    │
+             └───────────────┬───────────────────────────┘
+                             │ HTTPS / JWT
+             ┌───────────────▼───────────────────────────┐
+             │              Hive (Go binary)             │
+             │                                           │
+             │  ┌─────────┐   ┌────────┐  ┌───────────┐  │
+             │  │ Planner │─▶│ Engine │─▶│  Workers  │  │
+             |  └────┬────┘   └───┬────┘  └─────┬─────┘  │
+             │       │            │             │        │
+             │  Exploration   LLM pool      Tools/MCP    │
+             │    graph      (failover)      agents      │
+             └───────┬───────────────────────┬───────────┘
+                     │                       │
+           ┌─────────▼──────────┐   ┌───────────▼──────────┐
+           │    PostgreSQL 16   │   │ Targets (authorized) │
+           │ assets · findings ·│   │ MITM proxy :8788     │
+           │ traffic · activity │   │ browser extension    │
+           └────────────────────┘   └──────────────────────┘
 ```
 
 - **Planner.** One per active task. Receives triggers (worker done, finding, heartbeat), judges goal metrics, and spawns/steers/kills intents.
