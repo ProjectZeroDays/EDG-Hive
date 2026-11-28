@@ -1,4 +1,4 @@
-[<div align="center">
+<div align="center">
 
 <p align="center">
   <img src="/web/public/hive-README.png" alt="Hive Logo" width="200">
