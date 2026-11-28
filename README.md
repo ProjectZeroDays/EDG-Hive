@@ -4,7 +4,7 @@
   <img src="/web/public/logo.png" alt="Hive Logo" width="200" height=200">
 </p>
 
-──────────▼───────────
+──────────▼──────────
 
 
 <p align="center">
