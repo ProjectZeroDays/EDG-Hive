@@ -8,7 +8,11 @@
   <img src="/web/public/hive-README.png" alt="Hive Logo" width="400">
 </p>
 
+---
+
 **Autonomous penetration testing that keeps its receipts.**
+
+----
 
 [![Release](https://img.shields.io/github/v/release/ProjectZeroDays/EDG-Hive?label=release&color=6b34db)](https://github.com/ProjectZeroDays/EDG-Hive/releases)
 [![License](https://img.shields.io/github/license/ProjectZeroDays/EDG-Hive?color=6b34db)](LICENSE)
