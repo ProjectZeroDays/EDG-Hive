@@ -20,7 +20,7 @@
 [![Go](https://img.shields.io/github/go-mod/go-version/ProjectZeroDays/EDG-Hive?color=6b34db)](go.mod)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-6b34db)](https://github.com/ProjectZeroDays/EDG-Hive/releases)
 [![Security](https://img.shields.io/badge/security-AGPL--3.0%20%2B%20scope%20gates-6b34db)](SECURITY.md)
-[![Maintained](https://img.shields.io/badge/maintained-yes-6b34db)](https://github.com/ProjectZeroDays/EDG-Hive/commits/main)
+[![Maintained](https://img.shields.io/badge/maintained-yes-6b34db)](https://github.com/ProjectZeroDays/EDG-Hive/commits/main)-
 
 <a href="#quick-start">Quick Start</a> ·
   <a href="#architecture">Architecture</a> ·
@@ -29,7 +29,7 @@
   <a href="#api-documentation">API</a> ·
   <a href="#security-considerations">Security</a> ·
   <a href="#troubleshooting">Troubleshooting</a> ·
-  <a href="https://github.com/ProjectZeroDays/EDG-HIVE/wiki">Wiki</a>
+  <a href="#wiki">Wiki</a> ·
 </div>
 
 ---
