@@ -550,7 +550,7 @@ Be professional, specific, and respectful. Security work attracts strong opinion
 
 ## Author
 
-**ProjectZeroDays** — [github.com/BaaRai](https://github.com/ProjectZeroDays)
+**ProjectZeroDays**
 
 ---
 
