@@ -1,5 +1,9 @@
 <div align="center">
 
+  <p align="center">
+  <img src="/web/public/logo.png" alt="Hive Logo" width="50" height="50">
+</p>
+  
 <p align="center">
   <img src="/web/public/hive-README.png" alt="Hive Logo" width="200">
 </p>
