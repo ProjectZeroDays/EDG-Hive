@@ -22,9 +22,6 @@
   <a href="#security-considerations">Security</a> ·
   <a href="#troubleshooting">Troubleshooting</a> ·
   <a href="https://github.com/ProjectZeroDays/EDG-HIVE/wiki">Wiki</a>
-
-[Quick Start](#quick-start) · [Architecture](#architecture) · [Installation](#installation) · [Configuration](#configuration) · [API](#api-documentation) · [Security](#security-considerations) · [Troubleshooting](#troubleshooting)
-
 </div>
 
 ---
