@@ -15,6 +15,23 @@
   body.light{--bg:#f6f8fc;--panel:#ffffff;--panel2:#eef1f8;--line:#dde3ef;--txt:#1b2440;--dim:#5b6b8c;--faint:#93a1bd;--accSoft:#dbeafe}
   /* ---------- top chrome ---------- */
   .topbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 16px;position:sticky;top:10px;z-index:50;box-shadow:0 8px 30px rgba(0,0,0,.35)}
+  .topbar .nav-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid var(--line);
+  color: var(--dim);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+} 
+  .topbar .nav-link:hover {
+  border-color: #3b82f6;
+  color: #ffffff;
+  background: #2563eb;
+}
   .brand{display:flex;align-items:center;gap:9px;margin-right:20px;font-weight:800;font-size:15px;letter-spacing:.4px}
   .brand .logo{display:inline-flex;align-items:center;height:36px}
   .brand .logo img{height:32px;width:auto;max-width:120px;object-fit:contain;display:block;border-radius:6px}
@@ -827,5 +844,14 @@ Cookie: session=9f31…
     window.location.href = 'https://github.com/ProjectZeroDays/EDG-HIVE';
   };
 </script>
+<footer><center><a href="#quick-start">Quick Start</a> ·
+  <a href="#architecture">Architecture</a> ·
+  <a href="#installation">Installation</a> ·
+  <a href="#configuration">Configuration</a> ·
+  <a href="#api-documentation">API</a> ·
+  <a href="#security-considerations">Security</a> ·
+  <a href="#troubleshooting">Troubleshooting</a> ·
+  <a href="https://github.com/ProjectZeroDays/EDG-HIVE/wiki/HIVE">Wiki</a></center>
+</div></footer>
 </body>
 </html>
