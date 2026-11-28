@@ -1,6 +1,8 @@
 <div align="center">
 
-# Hive
+<p align="center">
+  <img src="\web\public\hive-README.png" alt="Hive Logo" width="200">
+</p>
 
 **Autonomous penetration testing that keeps its receipts.**
 
