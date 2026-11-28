@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -7,30 +7,42 @@
   :root{
     --bg:#0a0f1c; --panel:#111a30; --panel2:#0d1526; --line:#22304f;
     --txt:#dce6ff; --dim:#8296bf; --faint:#5a6c93;
-    --acc:#6d7cff; --accSoft:#2a3564; --ok:#2dd4a7; --warn:#f5b544; --crit:#ff5d6c; --info:#4cc3ff; --blue:#b98bff;
+    --acc:#2563eb; --accSoft:#172b56; --ok:#2dd4a7; --warn:#f5b544; --crit:#ff5d6c; --info:#4cc3ff; --blue:#3b82f6;
     --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#05080f;color:var(--txt);font:13px/1.45 "Segoe UI",Inter,system-ui,sans-serif;padding:18px 22px 60px}
-  body.light{--bg:#f6f8fc;--panel:#ffffff;--panel2:#eef1f8;--line:#dde3ef;--txt:#1b2440;--dim:#5b6b8c;--faint:#93a1bd;--accSoft:#e4e8ff}
+  body.light{--bg:#f6f8fc;--panel:#ffffff;--panel2:#eef1f8;--line:#dde3ef;--txt:#1b2440;--dim:#5b6b8c;--faint:#93a1bd;--accSoft:#dbeafe}
   /* ---------- top chrome ---------- */
   .topbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 16px;position:sticky;top:10px;z-index:50;box-shadow:0 8px 30px rgba(0,0,0,.35)}
-  .brand {display: flex;align-items: center;gap: 9px;margin-right: 16px}
+  .brand{display:flex;align-items:center;gap:9px;margin-right:20px;font-weight:800;font-size:15px;letter-spacing:.4px}
   .brand .logo{display:inline-flex;align-items:center;height:36px}
-  .brand .logo img{height:36px;width:auto;max-width:120px;object-fit:contain;display:block;border-radius:6px}
-  .brand .tag{font-size:10px;font-weight:700;color:var(--acc);border:0px solid var(--accSoft);background:var(--accSoft);padding:2px 8px;border-radius:99px;letter-spacing:.6px}
-  .screens{display:flex;gap:6px;flex-wrap:wrap}
-  .screens button{background:transparent;border:2px transparent var(--line);color:var(--dim);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:600}
+  .brand .logo img{height:32px;width:auto;max-width:120px;object-fit:contain;display:block;border-radius:6px}
+  .brand .tag:empty{display:none}
+  .screens{display:flex;gap:8px;flex-wrap:wrap}
+  .screens button{background:transparent;border:2px solid var(--line);color:var(--dim);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:600}
   .screens button.on{background:#2563eb;border:2px solid #3b82f6;color:#ffffff}
   .togs{margin-left:auto;display:flex;gap:8px}
   .togs button{background:var(--panel2);border:1px solid var(--line);color:var(--dim);padding:6px 11px;border-radius:9px;cursor:pointer;font-size:11px;font-weight:700}
   /* ---------- screen frame ---------- */
   .screen{display:none;margin-top:18px}
   .screen.on{display:block}
-  .meta{display:flex;gap:18px;align-items:baseline;margin:6px 2px 14px;flex-wrap:wrap}
-  .meta h2{font-size:18px}
+  .meta {
+    display: flex;
+    gap: 18px;
+    align-items: baseline;
+    margin: 6px 0 14px;
+    flex-wrap: wrap;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+ .meta h2 { font-size: 18px; }
   .meta p{color:var(--dim);font-size:12px;max-width:760px}
-  .legend{font-size:11px;color:var(--faint);margin-left:auto}
+  .meta.card{display:flex;gap:18px;align-items:baseline;margin:6px 0 14px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .hintline.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:11.5px;color:var(--dim);text-align:center}
+  .legend { font-size: 11px; color: var(--faint); margin-left: auto; }
   .wrap{display:grid;grid-template-columns:minmax(0,1fr) 268px;gap:16px;align-items:start}
   .canvas{background:var(--bg);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.35)}
   .annot{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;position:sticky;top:78px}
@@ -62,8 +74,8 @@
   .row{display:flex;gap:12px}.col{display:flex;flex-direction:column;gap:12px}
   .grow{flex:1;min-width:0}
   .rel{position:relative}
-  .co{position:absolute;top:-8px;right:-6px;background:var(--acc);color:#fff;border-radius:99px;font-size:9.5px;font-weight:800;padding:1.5px 6.5px;box-shadow:0 2px 8px rgba(0,0,0,.4);z-index:5}
-  .co.ok{background:var(--ok)} .co.warn{background:var(--warn);color:#201500} .co.crit{background:var(--crit)} .co.info{background:var(--info);color:#03202e}
+  .co{position:absolute;top:-8px;right:-6px;background:#2563eb;color:#ffffff;border:1px solid #3b82f6;border-radius:99px;font-size:9.5px;font-weight:800;padding:1.5px 6.5px;box-shadow:0 2px 8px rgba(0,0,0,.4);z-index:5}
+  .co.ok, .co.warn, .co.crit, .co.info{background:#2563eb;color:#ffffff;border:1px solid #3b82f6}
   .kpi{display:flex;flex-direction:column;gap:3px}
   .kpi .v{font-size:22px;font-weight:800;letter-spacing:-.5px}
   .kpi .l{font-size:11px;color:var(--dim)}
@@ -74,8 +86,8 @@
   .p-high{background:rgba(245,181,68,.13);color:var(--warn);border:1px solid rgba(245,181,68,.4)}
   .p-med{background:rgba(76,195,255,.12);color:var(--info);border:1px solid rgba(76,195,255,.35)}
   .p-low{background:rgba(45,212,167,.12);color:var(--ok);border:1px solid rgba(45,212,167,.35)}
-  .p-acc{background:var(--accSoft);color:#aeb9ff;border:1px solid rgba(0,26,255,.45)}
-  .p-ok{background:rgba(45,212,167,.12);color:var(--ok);border:1px solid rgba(45,212,167,.35)}
+  .p-acc{background:var(--accSoft);color:#93c5fd;border:1px solid rgba(59,130,246,.5)}
+  .req .hd{color:#60a5fa}  .p-ok{background:rgba(45,212,167,.12);color:var(--ok);border:1px solid rgba(45,212,167,.35)}
   .p-dim{background:var(--panel2);color:var(--dim);border:1px solid var(--line)}
   .btn{display:inline-flex;align-items:center;gap:6px;background:var(--acc);color:#fff;border-radius:8px;padding:6px 12px;font-size:11.5px;font-weight:700;border:0}
   .btn.ghost{background:var(--panel);border:1px solid var(--line);color:var(--dim)}
@@ -121,7 +133,66 @@
   .gauge{width:44px;height:44px;border-radius:99px;display:grid;place-items:center;font-weight:800;font-size:12px;flex:none}
   .note{font-size:10.5px;color:var(--faint);margin-top:8px}
   .foot{padding:10px 16px;border-top:1px solid var(--line);color:var(--faint);font-size:10.5px;display:flex;gap:16px}
-  .hintline{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;font-size:11px;color:var(--dim);text-align:center}
+/* Centered footer in the same blue web card */
+  .site-footer {
+    margin-top: 16px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--dim);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+/* Inverse blue and white font on the G2 Role Matrix card */
+  .role-matrix-card h5 {
+    color: #ffffff;
+  }
+  .role-matrix-card .tbl th {
+    color: #93c5fd;
+  }
+  .role-matrix-card .tbl td {
+    color: #ffffff;
+  }
+  .role-matrix-card .tbl td b {
+    color: #60a5fa;
+  }
+  .role-matrix-card .note {
+    color: #93c5fd;
+  }
+  .site-footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 18px;
+  }
+  .site-footer a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .site-footer a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+  }
+  .site-footer .sep {
+    color: var(--faint);
+    user-select: none;
+  }
+  .hintline {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 13px 14px;
+    font-size: 11.5px;
+    color: var(--dim);
+    text-align: center;
+  }
 </style>
 </head>
 <body>
@@ -133,19 +204,20 @@
         <img src="https://raw.githubusercontent.com/ProjectZeroDays/EDG-HIVE/master/web/public/hive-wordmark.png" alt="Hive Logo">
       </a>
     </span>
-    <span class="tag">          </span>
+    <span class="tag"></span>
   </div>
   <div class="screens">
-    <button data-s="s0" class="on">0 · Overview</button>
-    <button data-s="s1">1 · Dashboard</button>
-    <button data-s="s2">2 · Engagement</button>
-    <button data-s="s3">3 · Findings</button>
-    <button data-s="s4">4 · Approvals</button>
-    <button data-s="s5">5 · Traffic</button>
-    <button data-s="s6">6 · Governance</button>
+    <button data-s="s0" class="on">  Overview</button>
+    <button data-s="s1">   Dashboard</button>
+    <button data-s="s2">   Engagement</button>
+    <button data-s="s3">   Findings</button>
+    <button data-s="s4">   Approvals</button>
+    <button data-s="s5">   Traffic</button>
+    <button data-s="s6">   Governance</button>
   </div>
   <div class="togs">
-    <button id="tgTheme">◐</button>
+    <button id="tgTheme">◐ Theme</button>
+    <button id="tgDensity">⇱ Github</button>
   </div>
 </div>
 
@@ -742,16 +814,17 @@ Cookie: session=9f31…
   </div>
 </section>
 
-<script>-
-  const btns=document.querySelectorAll('.screens button');
-  btns.forEach(b=>b.onclick=()=>{
-    btns.forEach(x=>x.classList.remove('on'));b.classList.add('on');
-    document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));
+<script>
+  const btns = document.querySelectorAll('.screens button');
+  btns.forEach(b => b.onclick = () => {
+    btns.forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('on'));
     document.getElementById(b.dataset.s).classList.add('on');
   });
-  document.getElementById('tgTheme').onclick=()=>document.body.classList.toggle('light');
-  document.getElementById('tgDensity').onclick=()=>{
-    document.querySelectorAll('.main').forEach(m=>{m.style.fontSize=m.style.fontSize==='12px'?'':'12px'});
+  document.getElementById('tgTheme').onclick = () => document.body.classList.toggle('light');
+  document.getElementById('tgDensity').onclick = () => {
+    window.location.href = 'https://github.com/ProjectZeroDays/EDG-HIVE';
   };
 </script>
 </body>
